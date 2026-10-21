@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadime Özge Boztunç | Hukuk Bürosu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0b0b0b;
+            color: #f5f0e6;
+            font-family: Georgia, serif;
+        }
+
+       header {
+    padding: 30px 8%;
+    border-bottom: 1px solid #b99a56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0b0b0b;
+}
+
+        .logo {
+            color: #d4af65;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #f5f0e6;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+              letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d4af65;
+        }
+
+    .hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.55)
+        ),
+       url("adalet.png.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-bottom: 1px solid #8d713d;
+    position: relative;
+    overflow: hidden;
+}
+
+        .hero p {
+            color: #d4af65;
+            letter-spacing: 5px;
+            margin-bottom: 25px;
+        }
+
+     .hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 12%;
+    bottom: 12%;
+    width: 45px;
+    border-left: 2px solid rgba(212, 175, 101, 0.35);
+    border-right: 2px solid rgba(212, 175, 101, 0.35);
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(212, 175, 101, 0.08),
+        transparent
+    );
+    pointer-events: none;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    left: 5%;
+}
+
+.hero::after {
+    right: 5%;
+}
+
+@media (max-width: 700px) {
+    .hero::before,
+    .hero::after {
+        display: none;
+    }
+}
+        
+
+       
+.hero h2 {
+    color: #d4af65;
+    font-size: 22px;
+    letter-spacing: 8px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+       
+
+        .hero .description {
+            padding: 0 15px;
+            color: #c7c2b8;
+            letter-spacing: 1px;
+            margin-top: 28px;
+            line-height: 1.8;
+        }
+
+        .line {
+            width: 80px;
+            height: 2px;
+            background: #d4af65;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #aaa;
+            border-top: 1px solid #29251d;
+            font-size: 13px;
+        }
+
+       @media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 5%;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 12px;
+    }
+}
+    
+   /* Mobil menü butonu */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        margin: 10px auto;
+        padding: 8px 16px;
+        background: transparent;
+        color: #d4af65;
+        border: 1px solid #d4af65;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    #site-menu {
+        display: none !important;
+    }
+
+    #site-menu.active {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+   </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">FOB.</div>
+
+<button class="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="site-menu">
+    ☰
+</button>
+        <nav id="site-menu">
+    <a href="#anasayfa">Ana Sayfa</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#calisma-alanlari">Çalışma Alanları</a>
+    <a href="#sss">Sık Sorulan Sorular</a>
+    <a href="#makaleler">Hukuki Makaleler</a>
+    <a href="#iletisim">İletişim</a>
+</nav>
+    </header>
+
+    <section class="hero" id="anasayfa">
+        <p>HUKUK • ADALET • GÜVEN</p>
+
+        <h1>FADİME ÖZGE BOZTUNÇ</h1>
+        <h2>HUKUK BÜROSU</h2>
+
+        <div class="line"></div>
+
+        <div class="description">
+            Hukukta Güven, Hizmette Özen<br>
+            Her Müvekkile Özel, Özenli Hukuki Destek
+        </div>
+    </section>
+    <section id="hakkimizda" style="padding: 80px 10%; text-align: center; background-color: #121212;"> 
+<h2 style="font-size: 36px; font-weight: normal; margin-bottom: 25px; text-align: center;">
+    Hukukta Güven, Hizmette Özen
+</h2>
+
+        <div style="width: 70px; height: 2px; background: #d4af65; margin: 0 auto 30px;"></div>
+
+        <p style="color: #c7c2b8; line-height: 2; max-width: 750px; margin: auto;">
+            Fadime Özge Boztunç Hukuk Bürosu olarak hukuki süreçlerde
+            güveni, özeni ve profesyonel yaklaşımı esas alıyoruz.
+            Her dosyayı kendi koşulları içinde değerlendirerek
+            müvekkillerimize açık, dikkatli ve çözüm odaklı hukuki
+            destek sunmayı amaçlıyoruz.
+        </p>
+    
+    </section>
+    <section id="calisma-alanlari" style="padding: 80px 8%; text-align: center;">
+        <p style="color: #d4af65; letter-spacing: 4px; margin-bottom: 18px;">
+            UZMANLIK ALANLARI
+        </p>
+
+        <h2 style="font-size: 36px; font-weight: normal; margin-bottom: 45px;">
+            Çalışma Alanlarımız
+        </h2>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;">
+
+            <div style="border: 1px solid #8d713d; padding: 35px 25px; flex: 1 1 220px; max-width: 320px;">
+                <h3 style="color: #d4af65; font-size: 23px; font-weight: normal; margin-bottom: 18px;">
+                    Aile Hukuku
+                </h3>
+                <p style="color: #c7c2b8; line-height: 1.8;">
+                    Aile hukukundan doğan uyuşmazlıklarda hukuki destek.
+                </p>
+            </div>
+
+            <div style="border: 1px solid #8d713d; padding: 35px 25px; flex: 1 1 220px; max-width: 320px;">
+                <h3 style="color: #d4af65; font-size: 23px; font-weight: normal; margin-bottom: 18px;">
+                    Ceza Hukuku
+                </h3>
+                <p style="color: #c7c2b8; line-height: 1.8;">
+                    Ceza hukuku süreçlerinde hak ve menfaatlerin korunmasına yönelik hukuki destek.
+                </p>
+            </div>
+
+            <div style="border: 1px solid #8d713d; padding: 35px 25px; flex: 1 1 220px; max-width: 320px;">
+                <h3 style="color: #d4af65; font-size: 23px; font-weight: normal; margin-bottom: 18px;">
+                    İş Hukuku
+                </h3>
+                <p style="color: #c7c2b8; line-height: 1.8;">
+                    İşçi ve işveren ilişkilerinden kaynaklanan hukuki konularda destek.
+                </p>
+            </div>
+
+        </div>
+    </section>
+   <p style="color: #c7c2b8; margin-top: 12px;">
+            E-posta:
+            <a href="mailto:yigiterozge34@gmail.com" style="color: #d4af65;">
+                yigiterozge34@gmail.com
+            </a>
+        </p>
+
+        <p style="color: #c7c2b8; margin-top: 12px;">
+            Instagram:
+            <a href="https://www.instagram.com/av.ozgeboztunc/" target="_blank" rel="noopener noreferrer" style="color: #d4af65;">
+                @av.ozgeboztunc
+            </a>
+        </p>
+    </section>
+    <section id="sss" style="padding: 80px 10%; background: #0b0b0b;">
+        <p style="text-align: center; color: #d4af65; letter-spacing: 4px; margin-bottom: 18px;">
+            MERAK ETTİKLERİNİZ
+        </p>
+
+        <h2 style="text-align: center; font-size: 36px; font-weight: normal; margin-bottom: 40px;">
+            Sık Sorulan Sorular
+        </h2>
+
+        <div style="max-width: 800px; margin: auto;">
+
+            <details style="border-bottom: 1px solid #8d713d; padding: 20px 5px;">
+                <summary style="color: #d4af65; cursor: pointer; font-size: 19px;">
+                    Avukatla ilk görüşmede neler konuşulur?
+                </summary>
+                <p style="color: #c7c2b8; line-height: 1.8; padding-top: 15px;">
+                    İlk görüşmede hukuki sorununuz, olayların gelişimi ve mevcut belgeler değerlendirilir.
+                    Görüşmenin kapsamı ve izlenecek olası yollar somut duruma göre belirlenir.
+                </p>
+            </details>
+
+            <details style="border-bottom: 1px solid #8d713d; padding: 20px 5px;">
+                <summary style="color: #d4af65; cursor: pointer; font-size: 19px;">
+                    Hukuki danışmanlık için hangi belgeler gerekir?
+                </summary>
+                <p style="color: #c7c2b8; line-height: 1.8; padding-top: 15px;">
+                    Gerekli belgeler hukuki konunun türüne göre değişir.
+                    Elinizdeki sözleşme, yazışma, karar ve diğer ilgili belgeleri görüşmeye getirmeniz yararlı olabilir.
+                </p>
+            </details>
+
+            <details style="border-bottom: 1px solid #8d713d; padding: 20px 5px;">
+                <summary style="color: #d4af65; cursor: pointer; font-size: 19px;">
+                    Hukuki süreç ne kadar sürer?
+                </summary>
+                <p style="color: #c7c2b8; line-height: 1.8; padding-top: 15px;">
+                    Süre; uyuşmazlığın türüne, dosyanın özelliklerine ve ilgili yargı sürecine göre değişebilir.
+                    Bu nedenle kesin bir süre vermek her olayda mümkün değildir.
+                </p>
+            </details>
+
+            <details style="border-bottom: 1px solid #8d713d; padding: 20px 5px;">
+                <summary style="color: #d4af65; cursor: pointer; font-size: 19px;">
+                    Aile, ceza ve iş hukuku alanlarında destek alabilir miyim?
+                </summary>
+                <p style="color: #c7c2b8; line-height: 1.8; padding-top: 15px;">
+                    Büro, belirtilen çalışma alanlarındaki hukuki konularla ilgilenmektedir.
+                    Başvurunuzun kapsamı ve uygun hukuki destek, olayın özelliklerine göre değerlendirilir.
+                </p>
+            </details>
+
+        </div>
+    </section>
+    <section id="makaleler" style="padding: 80px 8%; background: #121212; text-align: center;">
+        <p style="color: #d4af65; letter-spacing: 4px; margin-bottom: 18px;">
+            HUKUKİ BİLGİLENDİRME
+        </p>
+
+        <h2 style="font-size: 36px; font-weight: normal; margin-bottom: 45px;">
+            Hukuki Makaleler
+        </h2>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; text-align: left;">
+
+            <article style="border: 1px solid #8d713d; padding: 30px; flex: 1 1 240px; max-width: 350px;">
+                <p style="color: #d4af65; margin-bottom: 15px;">AİLE HUKUKU</p>
+                <h3 style="font-size: 22px; font-weight: normal; margin-bottom: 15px;">
+                    Boşanma Süreci Hakkında Genel Bilgiler
+                </h3>
+                <p style="color: #c7c2b8; line-height: 1.8;">
+                    Boşanma davalarında süreç, değerlendirilmesi gereken konular ve hukuki destek hakkında genel bir bakış.
+                </p>
+            </article>
+
+            <article style="border: 1px solid #8d713d; padding: 30px; flex: 1 1 240px; max-width: 350px;">
+                <p style="color: #d4af65; margin-bottom: 15px;">İŞ HUKUKU</p>
+                <h3 style="font-size: 22px; font-weight: normal; margin-bottom: 15px;">
+                    İşçi Hakları Hakkında Bilinmesi Gerekenler
+                </h3>
+                <p style="color: #c7c2b8; line-height: 1.8;">
+                    İş ilişkilerinde sözleşme, ücret, çalışma koşulları ve işten ayrılma konularına genel bir giriş.
+                </p>
+            </article>
+
+            <article style="border: 1px solid #8d713d; padding: 30px; flex: 1 1 240px; max-width: 350px;">
+                <p style="color: #d4af65; margin-bottom: 15px;">CEZA HUKUKU</p>
+                <h3 style="font-size: 22px; font-weight: normal; margin-bottom: 15px;">
+                    Ceza Soruşturması Nasıl İlerler?
+                </h3>
+                <p style="color: #c7c2b8; line-height: 1.8;">
+                    Soruşturma ve kovuşturma aşamaları hakkında temel bilgiler ve hukuki desteğin önemi.
+                </p>
+            </article>
+
+        </div>
+
+        <p style="color: #999; font-size: 13px; margin-top: 30px; line-height: 1.8;">
+            Bu içerikler genel bilgilendirme amaçlıdır; somut olaylarda hukuki değerlendirme farklılık gösterebilir.
+        </p>
+    </section>
+    <section id="iletisim" style="padding: 80px 10%; text-align: center; background-color: #121212;">
+    <h2 style="color: #d4af65; margin-bottom: 25px;">
+        İletişim
+    </h2>
+    <p style="color: #cccccc; font-size: 16px; line-height: 1.8;">
+    Hukuki danışmanlık ve randevu talepleriniz için
+    bizimle iletişime geçebilirsiniz.
+</p>
+<p style="margin-top: 20px;">
+    <a href="tel:+905432659117"
+       style="color: #d4af65; text-decoration: none; font-size: 18px;">
+        📞 0543 265 91 17
+    </a>
+</p>
+<p style="margin-top: 15px;">
+    <a href="mailto:yigiterozge34@gmail.com"
+       style="color: #d4af65; text-decoration: none; font-size: 18px;">
+        ✉️ yigiterozge34@gmail.com
+    </a>
+</p>
+<p style="margin-top: 25px;">
+    <a href="https://wa.me/905432659117"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="background-color: #d4af65; color: #121212; padding: 14px 28px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block;">
+        WhatsApp ile İletişime Geç
+    </a>
+</p>
+<div style="max-width: 550px; margin: 45px auto 0;">
+
+    <h3 style="color: #d4af65; margin-bottom: 25px;">
+        Bize Mesaj Gönderin
+    </h3>
+
+    <form action="https://formsubmit.co/yigiterozge34@gmail.com" method="POST">
+
+        <input type="hidden" name="_subject"
+               value="Hukuk Bürosu Web Sitesi İletişim Formu">
+
+        <input type="hidden" name="_captcha" value="true">
+
+        <input type="text" name="ad_soyad"
+               placeholder="Adınız Soyadınız"
+               required
+               style="width: 100%; padding: 15px; margin-bottom: 15px; background: #1c1c1c; color: white; border: 1px solid #8d713d;">
+
+        <input type="email" name="email"
+               placeholder="E-posta Adresiniz"
+               required
+               style="width: 100%; padding: 15px; margin-bottom: 15px; background: #1c1c1c; color: white; border: 1px solid #8d713d;">
+
+        <textarea name="mesaj"
+                  placeholder="Mesajınız"
+                  rows="5"
+                  required
+                  style="width: 100%; padding: 15px; margin-bottom: 15px; background: #1c1c1c; color: white; border: 1px solid #8d713d;"></textarea>
+
+        <p style="color: #aaa; font-size: 12px; line-height: 1.6; margin-bottom: 20px;">
+            Lütfen mesajınızda özel nitelikli kişisel verilerinizi
+            veya gizli dava belgelerinizi paylaşmayınız.
+        </p>
+
+        <button type="submit"
+                style="background: #d4af65; color: #0b0b0b; border: none; padding: 15px 35px; cursor: pointer; font-weight: bold;">
+            MESAJ GÖNDER
+        </button>
+
+    </form>
+</div>    
+</section>
+  <footer>
+    <h3 style="color: #d4af65; font-size: 22px; margin-bottom: 15px;">
+        FADİME ÖZGE BOZTUNÇ
+    </h3>
+
+    <p style="color: #c7c2b8; margin-bottom: 15px;">
+        HUKUK BÜROSU
+    </p>
+
+    <div style="width: 60px; height: 1px; background: #d4af65; margin: 20px auto;"></div>
+
+    <p style="color: #999; font-size: 13px;">
+        © 2026 Fadime Özge Boztunç Hukuk Bürosu
+    </p>
+</footer> 
+
+<script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const siteMenu = document.querySelector('#site-menu');
+
+    menuButton.addEventListener('click', function() {
+        const isOpen = siteMenu.classList.toggle('active');
+
+        menuButton.setAttribute('aria-expanded', isOpen);
+        menuButton.setAttribute(
+            'aria-label',
+            isOpen ? 'Menüyü kapat' : 'Menüyü aç'
+        );
+        menuButton.textContent = isOpen ? '✕' : '☰';
+    });
+    siteMenu.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+        siteMenu.classList.remove('active');
+        menuButton.textContent = '☰';
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Menüyü aç');
+    });
+});
+</script>
+</body>
+</html>
